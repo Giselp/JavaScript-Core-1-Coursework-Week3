@@ -27,6 +27,22 @@ const AGES = [
 ];
 
 // TODO - Write for loop code here
+function writersAge(WRITERS,AGES){
+    let message="";
+
+    if (WRITERS.length !== AGES.length){
+        console.error("Los arrays deben tener la misma longitud");
+        return;
+    }
+
+    for(let i=0; i<WRITERS.length; i=i+1){
+     message += `${WRITERS[i]} is ${AGES[i]} years old.\n `
+    }
+    return message;
+}
+let finalMessage= writersAge(WRITERS,AGES)
+
+console.log(finalMessage)
 
 /*
 The output should look something like this:
